@@ -11,20 +11,21 @@
 	<link rel="stylesheet" href="css/background.css" />
 
 	<style>
-		/* 日本語 → DHPGothic-EB、英語 → Ink Free（sans-serif は使わない） */
+		/* 日本語 → DHPGothic-EB（sans-serif は使わない） */
 		body {
 			color: white;
 			font-family: 'DHPGothic-EB';
 		}
 
-		/* 英数字だけ Ink Free にする */
+		/* 英数字だけ Ink Free を強制する（全要素に自動適用） */
 		@font-face {
 			font-family: 'InkFreeOnly';
 			src: local('Ink Free');
-			unicode-range: U+0020-007F; /* ASCII 英数字記号 */
+			unicode-range: U+0020-007F; /* ASCII 英数字・記号 */
 		}
 
-		.ascii {
+		/* 全要素に英数字フォントを重ねて適用 */
+		* {
 			font-family: 'InkFreeOnly', 'DHPGothic-EB';
 		}
 
@@ -60,7 +61,7 @@
 	<!--LIST_PLACEHOLDER-->
 
 	<div style="margin: 20px 0;">
-		<button id="tweetButton" class="ascii">このページをX(Twitter)にPost(Tweet)する</button>
+		<button id="tweetButton">このページをX(Twitter)にPost(Tweet)する</button>
 	</div>
 
 	<script src="js/lightbox.min.js"></script>

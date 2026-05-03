@@ -11,20 +11,21 @@
 	<link rel="stylesheet" href="css/background.css" />
 
 	<style>
-		/* 日本語 → DHPGothic-EB、英語 → Ink Free（sans-serif は使わない） */
+		/* 日本語 → DHPGothic-EB（sans-serif は使わない） */
 		body {
 			color: white;
 			font-family: 'DHPGothic-EB';
 		}
 
-		/* 英数字だけ Ink Free にする */
+		/* 英数字だけ Ink Free を強制する（全要素に自動適用） */
 		@font-face {
 			font-family: 'InkFreeOnly';
 			src: local('Ink Free');
-			unicode-range: U+0020-007F; /* ASCII 英数字記号 */
+			unicode-range: U+0020-007F; /* ASCII 英数字・記号 */
 		}
 
-		.ascii {
+		/* 全要素に英数字フォントを重ねて適用 */
+		* {
 			font-family: 'InkFreeOnly', 'DHPGothic-EB';
 		}
 
@@ -223,6 +224,18 @@
   </td>
   <td>
 <p class="magcover">
+  <a href="images/big/1980年08月05日_週刊少女コミック_16号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年08月05日 16号 川原由美子">
+<img src="images/thumbnail/1980年08月05日_週刊少女コミック_16号.jpg" width="150" alt="1980年08月05日" />
+  </a>
+</p>
+<p class="detail">
+  週刊少女コミック<br />
+  16号<br />
+  1980年08月05日<br />
+</p>
+  </td>
+  <td>
+<p class="magcover">
   <a href="images/big/1980年08月21日_コロネット_September秋の号.jpg" data-lightbox="kawahara" data-title="コロネット 1980年08月21日 September秋の号 川原由美子">
 <img src="images/thumbnail/1980年08月21日_コロネット_September秋の号.jpg" width="150" alt="1980年08月21日" />
   </a>
@@ -245,6 +258,8 @@
   1980年11月21日<br />
 </p>
   </td>
+</tr>
+<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1981年01月25日_コロネット_JANUARY初春号.jpg" data-lightbox="kawahara" data-title="コロネット 1981年01月25日 JANUARY初春号 川原由美子">
@@ -257,8 +272,6 @@
   1981年01月25日<br />
 </p>
   </td>
-</tr>
-<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1981年08月25日_コロネット_AUGUST夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1981年08月25日 AUGUST夏の号 川原由美子">
@@ -295,6 +308,8 @@
   1982年04月25日<br />
 </p>
   </td>
+</tr>
+<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1982年06月25日_コロネット_JUNE初夏号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年06月25日 JUNE初夏号 川原由美子">
@@ -307,8 +322,6 @@
   1982年06月25日<br />
 </p>
   </td>
-</tr>
-<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1982年08月25日_コロネット_AUGUST夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年08月25日 AUGUST夏の号 川原由美子">
@@ -345,6 +358,8 @@
   1984年09月12日<br />
 </p>
   </td>
+</tr>
+<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1985年12月03日_ちゃお_昭和60年12月号.jpg" data-lightbox="kawahara" data-title="ちゃお 1985年12月03日 昭和60年12月号 川原由美子">
@@ -357,8 +372,6 @@
   1985年12月03日<br />
 </p>
   </td>
-</tr>
-<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1986年03月03日_ちゃお_ソルジャーボーイ4月号.jpg" data-lightbox="kawahara" data-title="ちゃお 1986年03月03日 ソルジャーボーイ4月号 川原由美子">
@@ -376,7 +389,7 @@
 
 
 	<div style="margin: 20px 0;">
-		<button id="tweetButton" class="ascii">このページをX(Twitter)にPost(Tweet)する</button>
+		<button id="tweetButton">このページをX(Twitter)にPost(Tweet)する</button>
 	</div>
 
 	<script src="js/lightbox.min.js"></script>
