@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 	<meta charset="utf-8" />
@@ -10,9 +11,21 @@
 	<link rel="stylesheet" href="css/background.css" />
 
 	<style>
+		/* 日本語 → DHPGothic-EB、英語 → Ink Free（sans-serif は使わない） */
 		body {
 			color: white;
-			font-family: 'DHPGothic-EB', 'Ink Free';
+			font-family: 'DHPGothic-EB';
+		}
+
+		/* 英数字だけ Ink Free にする */
+		@font-face {
+			font-family: 'InkFreeOnly';
+			src: local('Ink Free');
+			unicode-range: U+0020-007F; /* ASCII 英数字記号 */
+		}
+
+		.ascii {
+			font-family: 'InkFreeOnly', 'DHPGothic-EB';
 		}
 
 		h1 {
@@ -47,7 +60,7 @@
 	<!--LIST_PLACEHOLDER-->
 
 	<div style="margin: 20px 0;">
-		<button id="tweetButton">このページをX(Twitter)にPost(Tweet)する</button>
+		<button id="tweetButton" class="ascii">このページをX(Twitter)にPost(Tweet)する</button>
 	</div>
 
 	<script src="js/lightbox.min.js"></script>
