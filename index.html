@@ -10,49 +10,8 @@
 	<!-- 背景専用 CSS -->
 	<link rel="stylesheet" href="css/background.css" />
 
-	<style>
-		/* 日本語 → DHPGothic-EB（sans-serif は使わない） */
-		body {
-			color: white;
-			font-family: 'DHPGothic-EB';
-		}
-
-		/* 英数字だけ Ink Free を強制する（全要素に自動適用） */
-		@font-face {
-			font-family: 'InkFreeOnly';
-			src: local('Ink Free');
-			unicode-range: U+0020-007F; /* ASCII 英数字・記号 */
-		}
-
-		/* 全要素に英数字フォントを重ねて適用 */
-		* {
-			font-family: 'InkFreeOnly', 'DHPGothic-EB';
-		}
-
-		h1 {
-			font-size: 20px;
-			margin: 16px 0;
-		}
-
-		table.magazine {
-			border-collapse: collapse;
-		}
-
-			table.magazine td {
-				padding: 8px;
-				vertical-align: top;
-			}
-
-		p.magcover {
-			margin: 0 0 4px 0;
-		}
-
-		p.detail {
-			margin: 0;
-			font-size: 12px;
-			line-height: 1.4;
-		}
-	</style>
+	<!-- ギャラリー専用 CSS を外部化 -->
+	<link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
 
@@ -67,10 +26,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1980年1月5日第15巻第1号<br />
-  1980年01月05日<br />
-  この1980年1月5日号から、16号連続で川原由美子が表紙を飾る。通常、マンガ雑誌の表紙はその雑誌に寄稿する複数の漫画家が交代で担当する。ひとりの漫画家が連続して16冊表紙を描くのはきわめて異例。「いち早くオトソの道具をひっぱり出して(11月によ)正月気分でかいたの!」。<br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1980年1月5日第15巻第1号</span><br />
+  <span class="japanese-text">1980年01月05日</span><br />
+  <span class="japanese-text">この1980年1月5日号から、16号連続で川原由美子が表紙を飾る。通常、マンガ雑誌の表紙はその雑誌に寄稿する複数の漫画家が交代で担当する。ひとりの漫画家が連続して16冊表紙を描くのはきわめて異例。「いち早くオトソの道具をひっぱり出して(11月によ)正月気分でかいたの!」。</span><br />
 </p>
   </td>
   <td>
@@ -80,10 +39,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  第15巻第2号<br />
-  1980年01月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">第15巻第2号</span><br />
+  <span class="japanese-text">1980年01月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -93,10 +52,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  新春3号<br />
-  1980年02月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">新春3号</span><br />
+  <span class="japanese-text">1980年02月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -106,10 +65,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1980年2月20日第15巻第4号<br />
-  1980年02月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1980年2月20日第15巻第4号</span><br />
+  <span class="japanese-text">1980年02月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -119,10 +78,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1980年3月5日第15巻第5号<br />
-  1980年03月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1980年3月5日第15巻第5号</span><br />
+  <span class="japanese-text">1980年03月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -132,10 +91,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1980年3月20日第15巻6号<br />
-  1980年03月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1980年3月20日第15巻6号</span><br />
+  <span class="japanese-text">1980年03月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
 </tr>
@@ -147,10 +106,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1980年第9号<br />
-  1980年04月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1980年第9号</span><br />
+  <span class="japanese-text">1980年04月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -160,10 +119,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  第15巻第7号<br />
-  1980年4月5日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">第15巻第7号</span><br />
+  <span class="japanese-text">1980年4月5日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -173,10 +132,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  10号<br />
-  1980年5月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">10号</span><br />
+  <span class="japanese-text">1980年5月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -186,10 +145,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  June夏の号<br />
-  1980年05月21日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">June夏の号</span><br />
+  <span class="japanese-text">1980年05月21日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -199,10 +158,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  12号<br />
-  1980年06月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">12号</span><br />
+  <span class="japanese-text">1980年06月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -212,10 +171,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  14号<br />
-  1980年07月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">14号</span><br />
+  <span class="japanese-text">1980年07月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
 </tr>
@@ -227,10 +186,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  15号<br />
-  1980年07月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">15号</span><br />
+  <span class="japanese-text">1980年07月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -240,10 +199,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  16号<br />
-  1980年08月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">16号</span><br />
+  <span class="japanese-text">1980年08月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -253,10 +212,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  September秋の号<br />
-  1980年08月21日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">September秋の号</span><br />
+  <span class="japanese-text">1980年08月21日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -266,10 +225,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  December冬の号<br />
-  1980年11月21日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">December冬の号</span><br />
+  <span class="japanese-text">1980年11月21日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -279,10 +238,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  1981第1号<br />
-  1980年12月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">1981第1号</span><br />
+  <span class="japanese-text">1980年12月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -292,10 +251,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  3号<br />
-  1981年01月05日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">3号</span><br />
+  <span class="japanese-text">1981年01月05日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
 </tr>
@@ -307,10 +266,23 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  JANUARY初春号<br />
-  1981年01月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">JANUARY初春号</span><br />
+  <span class="japanese-text">1981年01月25日</span><br />
+  <span class="japanese-text"></span><br />
+</p>
+  </td>
+  <td>
+<p class="magcover">
+  <a href="images/big/1981年03月20日_週刊少女コミック_8号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1981年03月20日 8号 川原由美子">
+<img src="images/thumbnail/1981年03月20日_週刊少女コミック_8号.jpg" width="150" alt="1981年03月20日" />
+  </a>
+</p>
+<p class="detail">
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">8号</span><br />
+  <span class="japanese-text">1981年03月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -320,10 +292,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  AUGUST夏の号<br />
-  1981年08月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">AUGUST夏の号</span><br />
+  <span class="japanese-text">1981年08月25日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -333,10 +305,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  22号<br />
-  1981年10月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">22号</span><br />
+  <span class="japanese-text">1981年10月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -346,10 +318,10 @@
   </a>
 </p>
 <p class="detail">
-  週刊少女コミック<br />
-  4号<br />
-  1982年01月20日<br />
-  <br />
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">4号</span><br />
+  <span class="japanese-text">1982年01月20日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -359,12 +331,14 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  APRIL春の号<br />
-  1982年04月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">APRIL春の号</span><br />
+  <span class="japanese-text">1982年04月25日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
+</tr>
+<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1982年06月25日_コロネット_JUNE初夏号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年06月25日 JUNE初夏号 川原由美子">
@@ -372,14 +346,12 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  JUNE初夏号<br />
-  1982年06月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">JUNE初夏号</span><br />
+  <span class="japanese-text">1982年06月25日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
-</tr>
-<tr class="mag">
   <td>
 <p class="magcover">
   <a href="images/big/1982年08月25日_コロネット_AUGUST夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年08月25日 AUGUST夏の号 川原由美子">
@@ -387,10 +359,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  AUGUST夏の号<br />
-  1982年08月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">AUGUST夏の号</span><br />
+  <span class="japanese-text">1982年08月25日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -400,10 +372,10 @@
   </a>
 </p>
 <p class="detail">
-  コロネット<br />
-  OCTOBER秋の号<br />
-  1982年10月25日<br />
-  <br />
+  <span class="magazine-name">コロネット</span><br />
+  <span class="japanese-text">OCTOBER秋の号</span><br />
+  <span class="japanese-text">1982年10月25日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -413,10 +385,10 @@
   </a>
 </p>
 <p class="detail">
-  別冊少女コミック<br />
-  1984年10月号<br />
-  1984年09月12日<br />
-  <br />
+  <span class="magazine-name">別冊少女コミック</span><br />
+  <span class="japanese-text">1984年10月号</span><br />
+  <span class="japanese-text">1984年09月12日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -426,10 +398,10 @@
   </a>
 </p>
 <p class="detail">
-  ちゃお<br />
-  昭和60年12月号<br />
-  1985年12月03日<br />
-  <br />
+  <span class="magazine-name">ちゃお</span><br />
+  <span class="japanese-text">昭和60年12月号</span><br />
+  <span class="japanese-text">1985年12月03日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
   <td>
@@ -439,10 +411,10 @@
   </a>
 </p>
 <p class="detail">
-  ちゃお<br />
-  ソルジャーボーイ4月号<br />
-  1986年03月03日<br />
-  <br />
+  <span class="magazine-name">ちゃお</span><br />
+  <span class="japanese-text">ソルジャーボーイ4月号</span><br />
+  <span class="japanese-text">1986年03月03日</span><br />
+  <span class="japanese-text"></span><br />
 </p>
   </td>
 </tr>

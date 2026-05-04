@@ -10,49 +10,8 @@
 	<!-- 背景専用 CSS -->
 	<link rel="stylesheet" href="css/background.css" />
 
-	<style>
-		/* 日本語 → DHPGothic-EB（sans-serif は使わない） */
-		body {
-			color: white;
-			font-family: 'DHPGothic-EB';
-		}
-
-		/* 英数字だけ Ink Free を強制する（全要素に自動適用） */
-		@font-face {
-			font-family: 'InkFreeOnly';
-			src: local('Ink Free');
-			unicode-range: U+0020-007F; /* ASCII 英数字・記号 */
-		}
-
-		/* 全要素に英数字フォントを重ねて適用 */
-		* {
-			font-family: 'InkFreeOnly', 'DHPGothic-EB';
-		}
-
-		h1 {
-			font-size: 20px;
-			margin: 16px 0;
-		}
-
-		table.magazine {
-			border-collapse: collapse;
-		}
-
-			table.magazine td {
-				padding: 8px;
-				vertical-align: top;
-			}
-
-		p.magcover {
-			margin: 0 0 4px 0;
-		}
-
-		p.detail {
-			margin: 0;
-			font-size: 12px;
-			line-height: 1.4;
-		}
-	</style>
+	<!-- ギャラリー専用 CSS を外部化 -->
+	<link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
 

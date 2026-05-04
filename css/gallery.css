@@ -1,0 +1,64 @@
+/* ================================
+   フォント定義
+   ================================ */
+/* 英数字 → Ink Free */ @font-face {
+	font-family: 'InkFreeOnly';
+	src: local('Ink Free');
+	unicode-range: U+0020-007F; /* ASCII 英数字 */
+}
+/* 日本語 → メイリオ */ @font-face {
+	font-family: 'MeiryoOnly';
+	src: local('Meiryo');
+	unicode-range: U+3000-30FF, U+4E00-9FFF; /* 日本語 */
+}
+/* ================================
+   全体
+   ================================ */
+body {
+	color: white;
+	font-family: 'DHPGothic-EB';
+}
+
+* {
+	font-family: 'InkFreeOnly', 'DHPGothic-EB';
+}
+
+h1 {
+	font-size: 20px;
+	margin: 16px 0;
+}
+/* ================================
+   テーブル
+   ================================ */
+table.magazine {
+	border-collapse: collapse;
+}
+
+	table.magazine td {
+		padding: 8px;
+		vertical-align: top;
+	}
+/* ================================
+   表紙画像
+   ================================ */
+p.magcover {
+	margin: 0 0 4px 0;
+}
+/* ================================
+   詳細テキスト(雑誌名・巻号・日付・コメント)
+   ================================ */
+p.detail {
+	margin: 0;
+	width: 150px; /* ★ 画像幅と揃える */
+	line-height: 1.4;
+}
+	/* 1行目(MagazineName)だけフォントサイズ +1 */
+	p.detail span.magazine-name {
+		font-size: 13px;
+		font-family: 'InkFreeOnly', 'DHPGothic-EB';
+	}
+	/* VolumeText / DateText / Comment の日本語 → メイリオ、英数字 → InkFree */
+	p.detail span.japanese-text {
+		font-family: 'InkFreeOnly', 'MeiryoOnly';
+		font-size: 12px;
+	}
