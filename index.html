@@ -10,16 +10,55 @@
 	<!-- 背景専用 CSS -->
 	<link rel="stylesheet" href="css/background.css" />
 
-	<!-- ギャラリー専用 CSS を外部化 -->
+	<!-- ギャラリー専用 CSS -->
 	<link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
 
 	<h1>川原由美子 雑誌表紙ギャラリー</h1>
 
+	<!-- ========================= -->
+	<!-- ★ フィルタ UI プレースホルダ -->
+	<!-- ========================= -->
+
+	<h2>フィルタ</h2>
+
+	<div id="filter-area">
+
+		<!-- 雑誌名フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>雑誌名で絞り込み</h3>
+			<label><input type="radio" name="magazine-filter" value="ALL" checked> 全部</label><br />
+<label><input type="radio" name="magazine-filter" value="週刊少女コミック"> 週刊少女コミック</label><br />
+<label><input type="radio" name="magazine-filter" value="コロネット"> コロネット</label><br />
+<label><input type="radio" name="magazine-filter" value="別冊少女コミック"> 別冊少女コミック</label><br />
+<label><input type="radio" name="magazine-filter" value="ちゃお"> ちゃお</label><br />
+
+		</div>
+
+		<!-- 年フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>年で絞り込み</h3>
+			<label><input type="radio" name="year-filter" value="ALL" checked> 全部</label><br />
+<label><input type="radio" name="year-filter" value="1980"> 1980</label><br />
+<label><input type="radio" name="year-filter" value="1981"> 1981</label><br />
+<label><input type="radio" name="year-filter" value="1982"> 1982</label><br />
+<label><input type="radio" name="year-filter" value="1984"> 1984</label><br />
+<label><input type="radio" name="year-filter" value="1985"> 1985</label><br />
+<label><input type="radio" name="year-filter" value="1986"> 1986</label><br />
+
+		</div>
+
+	</div>
+
+	<hr />
+
+	<!-- ========================= -->
+	<!-- ギャラリー本体 -->
+	<!-- ========================= -->
 	<table class="magazine">
 <tr class="mag">
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年01月05日_週刊少女コミック_1980年1月5日第15巻第1号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年01月05日 1980年1月5日第15巻第1号 川原由美子">
 <img src="images/thumbnail/1980年01月05日_週刊少女コミック_1980年1月5日第15巻第1号.jpg" width="150" alt="1980年01月05日" />
@@ -32,7 +71,7 @@
   <span class="japanese-text">この1980年1月5日号から、16号連続で川原由美子が表紙を飾る。通常、マンガ雑誌の表紙はその雑誌に寄稿する複数の漫画家が交代で担当する。ひとりの漫画家が連続して16冊表紙を描くのはきわめて異例。「いち早くオトソの道具をひっぱり出して(11月によ)正月気分でかいたの!」。</span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年01月20日_週刊少女コミック_第15巻第2号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年01月20日 第15巻第2号 川原由美子">
 <img src="images/thumbnail/1980年01月20日_週刊少女コミック_第15巻第2号.jpg" width="150" alt="1980年01月20日" />
@@ -45,7 +84,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年02月05日_週刊少女コミック_新春3号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年02月05日 新春3号 川原由美子">
 <img src="images/thumbnail/1980年02月05日_週刊少女コミック_新春3号.jpg" width="150" alt="1980年02月05日" />
@@ -58,7 +97,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年02月20日_週刊少女コミック_1980年2月20日第15巻第4号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年02月20日 1980年2月20日第15巻第4号 川原由美子">
 <img src="images/thumbnail/1980年02月20日_週刊少女コミック_1980年2月20日第15巻第4号.jpg" width="150" alt="1980年02月20日" />
@@ -71,7 +110,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年03月05日_週刊少女コミック_1980年3月5日第15巻第5号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年03月05日 1980年3月5日第15巻第5号 川原由美子">
 <img src="images/thumbnail/1980年03月05日_週刊少女コミック_1980年3月5日第15巻第5号.jpg" width="150" alt="1980年03月05日" />
@@ -84,7 +123,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年03月20日_週刊少女コミック_1980年3月20日第15巻6号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年03月20日 1980年3月20日第15巻6号 川原由美子">
 <img src="images/thumbnail/1980年03月20日_週刊少女コミック_1980年3月20日第15巻6号.jpg" width="150" alt="1980年03月20日" />
@@ -99,7 +138,7 @@
   </td>
 </tr>
 <tr class="mag">
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年04月05日_週刊少女コミック_1980年第9号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年04月05日 1980年第9号 川原由美子">
 <img src="images/thumbnail/1980年04月05日_週刊少女コミック_1980年第9号.jpg" width="150" alt="1980年04月05日" />
@@ -112,7 +151,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/週刊少女コミック1980年4月5日第15巻第7号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年4月5日 第15巻第7号 川原由美子">
 <img src="images/thumbnail/週刊少女コミック1980年4月5日第15巻第7号.jpg" width="150" alt="1980年4月5日" />
@@ -125,7 +164,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/週刊少女コミック 昭和55年10号(5月20日号).jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年5月20日 10号 川原由美子">
 <img src="images/thumbnail/週刊少女コミック 昭和55年10号(5月20日号).jpg" width="150" alt="1980年5月20日" />
@@ -138,7 +177,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="コロネット" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年05月21日_コロネット_June夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1980年05月21日 June夏の号 川原由美子">
 <img src="images/thumbnail/1980年05月21日_コロネット_June夏の号.jpg" width="150" alt="1980年05月21日" />
@@ -151,7 +190,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年06月05日_週刊少女コミック_12号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年06月05日 12号 川原由美子">
 <img src="images/thumbnail/1980年06月05日_週刊少女コミック_12号.jpg" width="150" alt="1980年06月05日" />
@@ -164,7 +203,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年07月05日_週刊少女コミック_14号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年07月05日 14号 川原由美子">
 <img src="images/thumbnail/1980年07月05日_週刊少女コミック_14号.jpg" width="150" alt="1980年07月05日" />
@@ -179,7 +218,7 @@
   </td>
 </tr>
 <tr class="mag">
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年07月20日_週刊少女コミック_15号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年07月20日 15号 川原由美子">
 <img src="images/thumbnail/1980年07月20日_週刊少女コミック_15号.jpg" width="150" alt="1980年07月20日" />
@@ -192,7 +231,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年08月05日_週刊少女コミック_16号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年08月05日 16号 川原由美子">
 <img src="images/thumbnail/1980年08月05日_週刊少女コミック_16号.jpg" width="150" alt="1980年08月05日" />
@@ -205,7 +244,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="コロネット" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年08月21日_コロネット_September秋の号.jpg" data-lightbox="kawahara" data-title="コロネット 1980年08月21日 September秋の号 川原由美子">
 <img src="images/thumbnail/1980年08月21日_コロネット_September秋の号.jpg" width="150" alt="1980年08月21日" />
@@ -218,7 +257,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="コロネット" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年11月21日_コロネット_December冬の号.jpg" data-lightbox="kawahara" data-title="コロネット 1980年11月21日 December冬の号 川原由美子">
 <img src="images/thumbnail/1980年11月21日_コロネット_December冬の号.jpg" width="150" alt="1980年11月21日" />
@@ -231,7 +270,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1980">
 <p class="magcover">
   <a href="images/big/1980年12月05日_週刊少女コミック_1981第1号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1980年12月05日 1981第1号 川原由美子">
 <img src="images/thumbnail/1980年12月05日_週刊少女コミック_1981第1号.jpg" width="150" alt="1980年12月05日" />
@@ -244,7 +283,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1981">
 <p class="magcover">
   <a href="images/big/1981年01月05日_週刊少女コミック_3号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1981年01月05日 3号 川原由美子">
 <img src="images/thumbnail/1981年01月05日_週刊少女コミック_3号.jpg" width="150" alt="1981年01月05日" />
@@ -259,7 +298,7 @@
   </td>
 </tr>
 <tr class="mag">
-  <td>
+  <td data-mag="コロネット" data-year="1981">
 <p class="magcover">
   <a href="images/big/1981年01月25日_コロネット_JANUARY初春号.jpg" data-lightbox="kawahara" data-title="コロネット 1981年01月25日 JANUARY初春号 川原由美子">
 <img src="images/thumbnail/1981年01月25日_コロネット_JANUARY初春号.jpg" width="150" alt="1981年01月25日" />
@@ -272,7 +311,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1981">
 <p class="magcover">
   <a href="images/big/1981年03月20日_週刊少女コミック_8号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1981年03月20日 8号 川原由美子">
 <img src="images/thumbnail/1981年03月20日_週刊少女コミック_8号.jpg" width="150" alt="1981年03月20日" />
@@ -285,7 +324,20 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1981">
+<p class="magcover">
+  <a href="images/big/1981年04月05日_週刊少女コミック_9号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1981年04月05日 9号 川原由美子">
+<img src="images/thumbnail/1981年04月05日_週刊少女コミック_9号.jpg" width="150" alt="1981年04月05日" />
+  </a>
+</p>
+<p class="detail">
+  <span class="magazine-name">週刊少女コミック</span><br />
+  <span class="japanese-text">9号</span><br />
+  <span class="japanese-text">1981年04月05日</span><br />
+  <span class="japanese-text"></span><br />
+</p>
+  </td>
+  <td data-mag="コロネット" data-year="1981">
 <p class="magcover">
   <a href="images/big/1981年08月25日_コロネット_AUGUST夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1981年08月25日 AUGUST夏の号 川原由美子">
 <img src="images/thumbnail/1981年08月25日_コロネット_AUGUST夏の号.jpg" width="150" alt="1981年08月25日" />
@@ -298,7 +350,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1981">
 <p class="magcover">
   <a href="images/big/1981年10月20日_週刊少女コミック_22号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1981年10月20日 22号 川原由美子">
 <img src="images/thumbnail/1981年10月20日_週刊少女コミック_22号.jpg" width="150" alt="1981年10月20日" />
@@ -311,7 +363,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="週刊少女コミック" data-year="1982">
 <p class="magcover">
   <a href="images/big/1982年01月20日_週刊少女コミック_4号.jpg" data-lightbox="kawahara" data-title="週刊少女コミック 1982年01月20日 4号 川原由美子">
 <img src="images/thumbnail/1982年01月20日_週刊少女コミック_4号.jpg" width="150" alt="1982年01月20日" />
@@ -324,7 +376,9 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+</tr>
+<tr class="mag">
+  <td data-mag="コロネット" data-year="1982">
 <p class="magcover">
   <a href="images/big/1982年04月25日_コロネット_APRIL春の号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年04月25日 APRIL春の号 川原由美子">
 <img src="images/thumbnail/1982年04月25日_コロネット_APRIL春の号.jpg" width="150" alt="1982年04月25日" />
@@ -337,9 +391,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-</tr>
-<tr class="mag">
-  <td>
+  <td data-mag="コロネット" data-year="1982">
 <p class="magcover">
   <a href="images/big/1982年06月25日_コロネット_JUNE初夏号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年06月25日 JUNE初夏号 川原由美子">
 <img src="images/thumbnail/1982年06月25日_コロネット_JUNE初夏号.jpg" width="150" alt="1982年06月25日" />
@@ -352,7 +404,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="コロネット" data-year="1982">
 <p class="magcover">
   <a href="images/big/1982年08月25日_コロネット_AUGUST夏の号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年08月25日 AUGUST夏の号 川原由美子">
 <img src="images/thumbnail/1982年08月25日_コロネット_AUGUST夏の号.jpg" width="150" alt="1982年08月25日" />
@@ -365,7 +417,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="コロネット" data-year="1982">
 <p class="magcover">
   <a href="images/big/1982年10月25日_コロネット_OCTOBER秋の号.jpg" data-lightbox="kawahara" data-title="コロネット 1982年10月25日 OCTOBER秋の号 川原由美子">
 <img src="images/thumbnail/1982年10月25日_コロネット_OCTOBER秋の号.jpg" width="150" alt="1982年10月25日" />
@@ -378,7 +430,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="別冊少女コミック" data-year="1984">
 <p class="magcover">
   <a href="images/big/1984年09月12日_別冊少女コミック_1984年10月号.jpg" data-lightbox="kawahara" data-title="別冊少女コミック 1984年09月12日 1984年10月号 川原由美子">
 <img src="images/thumbnail/1984年09月12日_別冊少女コミック_1984年10月号.jpg" width="150" alt="1984年09月12日" />
@@ -391,7 +443,7 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+  <td data-mag="ちゃお" data-year="1985">
 <p class="magcover">
   <a href="images/big/1985年12月03日_ちゃお_昭和60年12月号.jpg" data-lightbox="kawahara" data-title="ちゃお 1985年12月03日 昭和60年12月号 川原由美子">
 <img src="images/thumbnail/1985年12月03日_ちゃお_昭和60年12月号.jpg" width="150" alt="1985年12月03日" />
@@ -404,7 +456,9 @@
   <span class="japanese-text"></span><br />
 </p>
   </td>
-  <td>
+</tr>
+<tr class="mag">
+  <td data-mag="ちゃお" data-year="1986">
 <p class="magcover">
   <a href="images/big/1986年03月03日_ちゃお_ソルジャーボーイ4月号.jpg" data-lightbox="kawahara" data-title="ちゃお 1986年03月03日 ソルジャーボーイ4月号 川原由美子">
 <img src="images/thumbnail/1986年03月03日_ちゃお_ソルジャーボーイ4月号.jpg" width="150" alt="1986年03月03日" />
@@ -427,5 +481,6 @@
 
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/tweet.js"></script>
+	<script src="js/filter.js"></script>
 </body>
 </html>

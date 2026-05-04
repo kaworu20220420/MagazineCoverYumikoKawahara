@@ -10,13 +10,40 @@
 	<!-- 背景専用 CSS -->
 	<link rel="stylesheet" href="css/background.css" />
 
-	<!-- ギャラリー専用 CSS を外部化 -->
+	<!-- ギャラリー専用 CSS -->
 	<link rel="stylesheet" href="css/gallery.css" />
 </head>
 <body>
 
 	<h1>川原由美子 雑誌表紙ギャラリー</h1>
 
+	<!-- ========================= -->
+	<!-- ★ フィルタ UI プレースホルダ -->
+	<!-- ========================= -->
+
+	<h2>フィルタ</h2>
+
+	<div id="filter-area">
+
+		<!-- 雑誌名フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>雑誌名で絞り込み</h3>
+			<!--MAGAZINE_FILTER_PLACEHOLDER-->
+		</div>
+
+		<!-- 年フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>年で絞り込み</h3>
+			<!--YEAR_FILTER_PLACEHOLDER-->
+		</div>
+
+	</div>
+
+	<hr />
+
+	<!-- ========================= -->
+	<!-- ギャラリー本体 -->
+	<!-- ========================= -->
 	<!--LIST_PLACEHOLDER-->
 
 	<div style="margin: 20px 0;">
@@ -25,5 +52,6 @@
 
 	<script src="js/lightbox.min.js"></script>
 	<script src="js/tweet.js"></script>
+	<script src="js/filter.js"></script>
 </body>
 </html>
