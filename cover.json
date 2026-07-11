@@ -14,7 +14,7 @@
     "DateTime": "1979-09-05T00:00:00",
     "DateText": "1979年09月05日",
     "VolumeText": "1979年9月5日号",
-    "Comment": null,
+    "Comment": "『気まぐれ四銃士』第1回。連載開始で表紙に登場。",
     "Type": "Cover"
   },
   {
@@ -292,7 +292,7 @@
     "MagazineName": "別冊少女コミック",
     "DateTime": "1983-05-12T00:00:00",
     "DateText": "1983年05月12日",
-    "VolumeText": "6月号",
+    "VolumeText": " 6月号",
     "Comment": null,
     "Type": "Cover"
   },
@@ -381,8 +381,8 @@
     "FileName": "週刊少女コミック 昭和55年10号(5月20日号).jpg",
     "MagazineName": "週刊少女コミック",
     "DateTime": "1980-05-20T00:00:00",
-    "DateText": "1980年5月20日",
-    "VolumeText": "10号",
+    "DateText": "1980年05月20日",
+    "VolumeText": "昭和55年10号",
     "Comment": null,
     "Type": "Cover"
   },
