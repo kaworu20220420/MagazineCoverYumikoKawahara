@@ -32,6 +32,15 @@
     "DateTime": "1979-01-05T00:00:00",
     "DateText": "1979年01月05日",
     "VolumeText": "第3号",
+    "Comment": "『風のおとしもの』予告。",
+    "Type": "Preview"
+  },
+  {
+    "FileName": "1979年07月20日_週刊少女コミック_16号.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1979-07-20T00:00:00",
+    "DateText": "1979年07月20日",
+    "VolumeText": "16号",
     "Comment": null,
     "Type": "Preview"
   }
