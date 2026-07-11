@@ -1,0 +1,70 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>川原由美子 雑誌予告ギャラリー</title>
+
+	<link rel="stylesheet" href="css/lightbox.css" />
+
+	<!-- 背景専用 CSS -->
+	<link rel="stylesheet" href="css/background.css" />
+
+	<!-- ギャラリー専用 CSS -->
+	<link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+
+	<h1>川原由美子 雑誌予告ギャラリー</h1>
+
+	<!-- ========================= -->
+	<!-- フィルタ UI プレースホルダ -->
+	<!-- ========================= -->
+
+	<div id="filter-area">
+
+		<!-- 雑誌名フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>雑誌名で絞り込み</h3>
+			<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="ALL" checked> 全部</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="増刊週刊少女コミック"> 増刊週刊少女コミック</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="週刊少女コミック"> 週刊少女コミック</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="コロネット"> コロネット</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="別冊少女コミック"> 別冊少女コミック</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="ちゃお"> ちゃお</label></span>
+<span class="filter-radio"><label><input type="radio" name="magazine-filter" value="ポシェット"> ポシェット</label></span>
+
+		</div>
+
+		<!-- 年フィルタ（C# が差し込む） -->
+		<div class="filter-block">
+			<h3>年で絞り込み</h3>
+			<span class="filter-radio"><label><input type="radio" name="year-filter" value="ALL" checked> 全部</label></span>
+
+		</div>
+
+	</div>
+
+	<hr />
+
+	<!-- ========================= -->
+	<!-- ギャラリー本体 -->
+	<!-- ========================= -->
+	<p>この分類には項目がありません。</p>
+<div class="page-links">
+    <a href="index.html">表紙</a> |
+    <a href="appendix.html">付録</a>
+</div>
+
+
+	<div style="margin: 20px 0;">
+		<button id="tweetButton">このページをX(Twitter)にPost(Tweet)する</button>
+	</div>
+	<div>
+		since 2026/04/25
+	</div>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/tweet.js"></script>
+	<script src="js/filter.js"></script>
+</body>
+</html>
