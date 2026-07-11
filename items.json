@@ -9,6 +9,15 @@
     "Type": "Preview"
   },
   {
+    "FileName": "1979年01月05日_週刊少女コミック_第3号_01.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1979-01-05T00:00:00",
+    "DateText": "1979年01月05日",
+    "VolumeText": "第3号",
+    "Comment": null,
+    "Type": "Preview"
+  },
+  {
     "FileName": "1979年06月28日_増刊週刊少女コミック_1979年6月28日号.jpg",
     "MagazineName": "増刊週刊少女コミック",
     "DateTime": "1979-06-28T00:00:00",
@@ -301,7 +310,7 @@
     "MagazineName": "別冊少女コミック",
     "DateTime": "1983-05-12T00:00:00",
     "DateText": "1983年05月12日",
-    "VolumeText": "6月号",
+    "VolumeText": " 6月号",
     "Comment": null,
     "Type": "Cover"
   },
@@ -390,8 +399,8 @@
     "FileName": "週刊少女コミック 昭和55年10号(5月20日号).jpg",
     "MagazineName": "週刊少女コミック",
     "DateTime": "1980-05-20T00:00:00",
-    "DateText": "1980年5月20日",
-    "VolumeText": "10号",
+    "DateText": "1980年05月20日",
+    "VolumeText": "昭和55年10号",
     "Comment": null,
     "Type": "Cover"
   },
