@@ -158,8 +158,17 @@
     "DateTime": "1979-09-05T00:00:00",
     "DateText": "1979年09月05日",
     "VolumeText": "1979年18号",
-    "Comment": null,
+    "Comment": "『気まぐれ四銃士』第2回。連載開始で表紙に登場。背表紙にもワンポイントで登場。連載も巻頭カラー！",
     "Type": "Cover"
+  },
+  {
+    "FileName": "1979年09月05日_週刊少女コミック_1979年18号_01.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1979-09-05T00:00:00",
+    "DateText": "1979年09月05日",
+    "VolumeText": "1979年18号",
+    "Comment": null,
+    "Type": "Appendix"
   },
   {
     "FileName": "1980年01月05日_週刊少女コミック_1980年1月5日第15巻第1号.jpg",
