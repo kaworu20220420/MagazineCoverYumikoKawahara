@@ -194,8 +194,17 @@
     "DateTime": "1979-10-05T00:00:00",
     "DateText": "1979年10月05日",
     "VolumeText": "第20号",
-    "Comment": null,
+    "Comment": "気まぐれ四銃士予告。",
     "Type": "Preview"
+  },
+  {
+    "FileName": "1979年10月05日_週刊少女コミック_第20号_01.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1979-10-05T00:00:00",
+    "DateText": "1979年10月05日",
+    "VolumeText": "第20号",
+    "Comment": null,
+    "Type": "Appendix"
   },
   {
     "FileName": "1980年01月05日_週刊少女コミック_1980年1月5日第15巻第1号.jpg",
