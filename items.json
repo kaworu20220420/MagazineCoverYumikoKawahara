@@ -248,7 +248,7 @@
     "DateTime": "1979-11-05T00:00:00",
     "DateText": "1979年11月05日",
     "VolumeText": "第22号",
-    "Comment": null,
+    "Comment": "気まぐれ四銃士",
     "Type": "Preview"
   },
   {
@@ -257,8 +257,17 @@
     "DateTime": "1979-11-05T00:00:00",
     "DateText": "1979年11月05日",
     "VolumeText": "第22号",
-    "Comment": null,
+    "Comment": "この間、小旅行へでかけたときのこと！！　ロープウエーに乗ったんだけど、（重さに耐えかねてか？）途中で止まってしまったのだ。スリル満点！！　実にこわかったあ（川原由美子）。",
     "Type": "Appendix"
+  },
+  {
+    "FileName": "1979年11月05日_週刊少女コミック_第22号_02.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1979-11-05T00:00:00",
+    "DateText": "1979年11月05日",
+    "VolumeText": "第22号",
+    "Comment": null,
+    "Type": "Preview"
   },
   {
     "FileName": "1980年01月05日_週刊少女コミック_1980年1月5日第15巻第1号.jpg",
