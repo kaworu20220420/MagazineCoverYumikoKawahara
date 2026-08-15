@@ -491,6 +491,15 @@
     "DateTime": "1980-01-05T00:00:00",
     "DateText": "1980年01月05日",
     "VolumeText": "1980年2月5日新春3号",
+    "Comment": "由美タンポーチ",
+    "Type": "Appendix"
+  },
+  {
+    "FileName": "1980年01月05日_週刊少女コミック_1980年2月5日新春3号_01.jpg",
+    "MagazineName": "週刊少女コミック",
+    "DateTime": "1980-01-05T00:00:00",
+    "DateText": "1980年01月05日",
+    "VolumeText": "1980年2月5日新春3号",
     "Comment": null,
     "Type": "Appendix"
   },
